@@ -8,7 +8,11 @@ define('ABSPATH', true);
 
 require_once "functions.php";
 
-$result = json_decode($argv[1], true);
+if (!(isset($result))) {
+
+    $result = json_decode($argv[1], true);
+
+}
 
 if ($result === null) {
     
