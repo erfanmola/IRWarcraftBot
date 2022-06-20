@@ -11,3 +11,14 @@ define('dpx_token', $token);
 define('dpx_async', true);
 define('dpx_bot_api_server', 'http://api.telegram.org');
 define('dpx_admin', 111999636);
+
+$db_info = [
+    'user' => 'sample',
+    'pass' => 'sample',
+    'name' => 'sample',
+    'host' => 'sample',
+];
+
+$conn = null;
+
+require_once __DIR__ . "/general-information.php";
